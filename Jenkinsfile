@@ -10,6 +10,7 @@ pipeline {
 
     stage('Test') {
       steps {
+        echo "okay mate"
         node '-v'
         node './app.test.js'
       }
