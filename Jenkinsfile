@@ -9,6 +9,7 @@ pipeline {
 
     stage('Test') {
       steps {
+        node '-v'
         node './app.test.js'
       }
     }
