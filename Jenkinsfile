@@ -9,7 +9,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        node 'app.test.js'
+        node './app.test.js'
       }
     }
 
