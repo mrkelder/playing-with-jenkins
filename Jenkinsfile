@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        yarn
+        npm 'i'
       }
     }
 
     stage('Test') {
       steps {
-        yarn 'app.test.js'
+        node 'app.test.js'
       }
     }
 
